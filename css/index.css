@@ -126,17 +126,6 @@ main {
 .movie img {
     width: 200px;
 }
-
-.detail_link a:hover {
-}
-
-.movie1_title {
-
-}
-.movie2_title {}
-.movie3_title {}
-.movie4_title {}
-
 .contents {
     width: 1200px;
     height: 300px;
@@ -207,18 +196,28 @@ main {
 }
 
 .now_playing > ul {
-    width: 3600px;
+    width: 100%;
     display: flex;
     padding: 0 20px 10px 0 !important;
     margin: 0 !important;
 }
 
-.now_playing > ul > li {
-    width: 140px;
-    height: 190px;
-    background-color: #a1e9f3;
-    border: 1px solid #eee;
-    margin: 5px 5px !important;
+.now-title {
+    font-size: 10px;
+}
+
+.now_list{
+    width: calc(100% / 10);
+    margin: 0 5px !important;
+}
+
+.now-img{
+    height: 25%;
+}
+
+.now__body > li > h2 {
+    font-size: 10px;
+    text-align: center;
 }
 
 .top_rated {
