@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* Team 5 Project index CSS */
+
+/* 메인영역 */
+
+
+
+main {
+    background-color: #fff;
+    font-family:  "맑은 고딕";
+}
+
+.menu {
+    min-height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+}
+
+.navi > ul {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi > ul > li {
+    width: 115px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navi > ul > li:hover a {
+    color: red !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+
+.imgslide {
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide_body{
+    width: 400% !important;
+    height: 600px;
+}
+
+.slidelist {
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: start;
+    padding: 0 !important;
+    position: absolute;
+    top: -60px ;
+    left: 0;
+}
+
+
+.slidelist li:nth-child(1) img {
+    margin-top: -90px !important;
+}
+
+.slidelist li:nth-child(2) img {
+    margin-top: -65px !important;
+}
+
+.slidelist li:nth-child(3) img {
+    margin-top: -65px !important;
+}
+
+.slidelist li:nth-child(4) img {
+    margin-top: -65px !important;
+}
+
+.slidelist > li {
+    margin: 0 !important;
+}
+
+.slidelist_title {
+    position: absolute;
+    top : 200px;
+    margin-left: 150px !important;
+}
+
+.slidelist_title > p {
+    font-size: 80px !important;
+    text-shadow: 3px 3px 3px #a5a5a5;
+    padding-bottom: 10px !important;
+}
+
+.slidelist_title > button {
+    width: 150px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255,255,255,0.6) !important;
+    color: #333 !important;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.detail_link {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 450px;
+    z-index: 100;
+    margin: 0 !important;
+}
+
+.movie {    
+    width: 200px;
+    height: 300px;
+    margin: 0 30px !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.movie img {
+    width: 200px;
+}
+
+.detail_link a:hover {
+}
+
+.movie1_title {
+
+}
+.movie2_title {}
+.movie3_title {}
+.movie4_title {}
+
+.contents {
+    width: 1200px;
+    height: 300px;
+    background-color: #646464;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.contents .tab {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    color: #fff;
+}
+
+.gallery {
+    width: 550px;
+    height: 100%;
+    margin: 0 !important;
+}
+
+.contents_body1 {    
+    width: 550px;
+    height: 195px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contents_body1 > li {
+    width: 120px;
+    height: 170px;
+    background-color: #6111a0;
+    border: 1px solid #eee;
+    margin: 5px !important;
+}
+
+.news {
+    width: 550px;
+    height: 390px;
+    margin: 0 !important;
+}
+
+.contents_body2 {    
+    width: 550px;
+    height: 195px;
+    background-color: #d9d9d9;
+}
+
+.now_playing {
+    width: 1200px;
+    height: 300px;
+    background-color: #413c77;
+    margin-top: 30px !important;
+    overflow: hidden;
+}
+
+.now_playing .tab {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    color: #fff;
+}
+
+.now_playing > ul {
+    width: 3600px;
+    display: flex;
+    padding: 0 20px 10px 0 !important;
+    margin: 0 !important;
+}
+
+.now_playing > ul > li {
+    width: 140px;
+    height: 190px;
+    background-color: #a1e9f3;
+    border: 1px solid #eee;
+    margin: 5px 5px !important;
+}
+
+.top_rated {
+    width: 1200px;
+    height: 600px;
+    background-color: #fdfbcb; 
+    margin-top: 30px !important;    
+}
+
+.top_rated > .tab {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    color: #000;
+}
+
+.rated__body {
+    width: 1100px;
+    height: 480px;
+    /* border: 1px solid #000; */
+}
+
+.reted__con{
+    display: flex;
+}
+
+.reted__con > li {
+    width: 550px;
+    height: 480px;
+}
+
+.rated__movie {
+    width: 100%;
+    height: 480px;    
+}
+
+.rated__poster {
+    width: 330px;
+    height: 480px;
+    background-color: #ffaf66;
+    float: left;
+}
+
+.rated__info {
+    width: 190px;
+    height: 480px;
+    float: left;
+    margin-right: 10px !important;
+}
+
+.rated__table{
+    background-color: #fff;
+}

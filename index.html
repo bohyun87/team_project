@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 5: 부제목</title>
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
+    <!-- javascript 연결 -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js" defer></script>
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.3.0-web/css/fontawesome.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/brands.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/solid.css" />
+
+    <!-- 부트스트랩 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="container-fluid">
+        <section class="container-md row">
+          <div class="logo col-md-2">
+            <a href="./index.html"
+              ><img src="images/logo_top.png" alt="로고"
+            /></a>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="search col-md-8">
+            <div class="input-group mb-3 movie-search">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="영화제목을 입력하세요."
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span
+                class="input-group-text"
+                style="width: 50px; height: 30px; border: 1px solid #000"
+                id="basic-addon2"
+                ><a href="#"
+                  ><i class="fa-solid fa-magnifying-glass search-icon"></i></a
+              ></span>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main class="container-md row">
+        <section class="menu col-md-12">
+          <nav class="navi">
+            <ul>
+              <li><a href="#">추천영화</a></li>
+              <li><a href="#">콘텐츠</a></li>
+              <li><a href="#">현재상영작</a></li>
+              <li><a href="#">랭킹</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="imgslide col-md-12">
+          <div class="slide_body">
+            <ul class="slidelist">
+              <li>
+                <img src="images/imgslide_movie1.jpg" alt="인터스텔라" />
+                <div class="slidelist_title">
+                  <p>Interstellar</p>
+                  <button type="button" class="btn btn-light">
+                    자세히 보기
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="images/imgslide_movie2.jpg"
+                  alt="더 퍼스트 슬램덩크"
+                />
+                <div class="slidelist_title">
+                  <h2>The First Slam Dunk</h2>
+                  <button type="button" class="btn btn-light">
+                    자세히 보기
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img src="images/imgslide_movie3.jpg" alt="존 윅 4" />
+                <div class="slidelist_title">
+                  <h2>John Wick: Chapter 4</h2>
+                  <button type="button" class="btn btn-light">
+                    자세히 보기
+                  </button>
+                </div>
+              </li>
+              <li>
+                <img src="images/imgslide_movie4.jpg" alt="아바타-물의 길" />
+                <div class="slidelist_title">
+                  <h2>Avatar: The Way of Water</h2>
+                  <button type="button" class="btn btn-light">
+                    자세히 보기
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="detail_link col-md-12">
+            <a class="movie detail_movie_1">
+              <img
+                src="images/movie1_interstellar-poster.jpg"
+                alt="인터스텔라"
+              />
+              <p class="movie1_title">인터스텔라</p>
+            </a>
+            <a class="movie detail_movie_2">
+              <img
+                src="images/movie2_slam-duck-poster.jpg"
+                alt="더 퍼스트 슬램덩크"
+              />
+              <p class="movie2_title">더 퍼스트 슬램덩크</p>
+            </a>
+            <a class="movie detail_movie_3">
+              <img src="images/movie3_john-wick-4-poster.jpg" alt="존 윅 4" />
+              <p class="movie3_title">존 윅 4</p>
+            </a>
+            <a class="movie detail_movie_4">
+              <img src="images/movie4_avatar-poster.jpg" alt="아바타-물의 길" />
+              <p class="movie4_title">아바타-물의 길</p>
+            </a>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="gallery">
+            <h2 class="tab">gallery</h2>
+            <ul class="contents_body1">
+              <li>
+                <a href="#"><img src="#" alt="img1" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="#" alt="img2" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="#" alt="img3" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="#" alt="img4" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="news">
+            <h2 class="tab">news</h2>
+            <ul class="contents_body2">
+              <li><a href="#">영화 기사 1</a></li>
+              <li><a href="#">영화 기사 2</a></li>
+              <li><a href="#">영화 기사 3</a></li>
+              <li><a href="#">영화 기사 4</a></li>
+              <li><a href="#">영화 기사 5</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="now_playing">
+          <h2 class="tab">현재 상영작</h2>
+          <ul class="now__body">
+            <li>
+              <a href="#"><img src="#" alt="영화1" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화2" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화3" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화4" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화5" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화6" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화7" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화8" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화9" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화10" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="영화11" /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="top_rated">
+          <h2 class="tab">랭&nbsp;&nbsp;킹</h2>
+          <div class="rated__body">
+            <ul class="reted__con">
+              <li>
+                <ul class="rated__movie">
+                  <li class="rated__poster">해당영화포스터</li>
+                  <li class="rated__info">영화 기본정보</li>
+                </ul>
+              </li>
+              <li class="rated__table">영화 순위표</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="container-fluid">
+        <section class="container-md row">
+          <div class="bt__logo col-md-2">
+            <a href="./index.html"
+              ><img src="images/logo_bottom.png" alt="하단로고"
+            /></a>
+          </div>
+          <div class="copy col-md-7">
+            <span>
+              (주)이젠아카데미 주소 인천광역시 남동구 인주대로 593 엔타스 12층
+              <br />
+              Copyright by <strong>Team 5.</strong> All rights reserved.
+            </span>
+          </div>
+          <div class="familysite col-md-3">
+            <select class="site-select" onchange="window.open(value,'_blank');">
+              <option selected disabled>사이트바로가기</option>
+              <option
+                value="https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do"
+              >
+                영화진흥위원회
+              </option>
+              <option value="https://www.cgv.co.kr/">CGV 예매사이트</option>
+              <option value="https://www.themoviedb.org/">The Movie DB</option>
+            </select>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
