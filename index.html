@@ -8,11 +8,7 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/common.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
-
-    <!-- javascript 연결 -->
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/index.js" defer></script>
-
+   
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css" />
     <link
@@ -37,45 +33,45 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="container-fluid">
-        <section class="container-md row">
-          <div class="logo col-md-2">
+      <header>
+        <section class="container-md header__section">
+          <div class="logo">
             <a href="./index.html"
               ><img src="images/logo_top.png" alt="로고"
             /></a>
           </div>
-          <div class="col-md-2"></div>
-          <div class="search col-md-8">
-            <div class="input-group mb-3 movie-search">
-              <input
-                type="text"
-                class="form-control search-input"
-                placeholder="영화제목을 입력하세요."
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <span
-                class="input-group-text"
-                style="width: 50px; height: 30px; border: 1px solid #000"
-                id="basic-addon2"
-                ><a href="#"
-                  ><i class="fa-solid fa-magnifying-glass search-icon"></i></a
-              ></span>
-            </div>
-          </div>
         </section>
       </header>
 
-      <main class="container-md row">
-        <section class="menu col-md-12">
-          <nav class="navi">
-            <ul>
+      <main>
+        <section class="menu">
+          <nav class="container-md navi">
+            <ul class="col-md-8 menu-list">
               <li><a href="#">추천영화</a></li>
               <li><a href="#">콘텐츠</a></li>
               <li><a href="#">현재상영작</a></li>
               <li><a href="#">랭킹</a></li>
             </ul>
           </nav>
+
+          <div class="container search">
+            <div class="input-group mb-3 movie-search">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="영화제목을 입력하세요 : )"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-magnifying-glass" style="color: #fff"></i>
+              </button>
+            </div>
+          </div>
         </section>
         <section class="imgslide col-md-12">
           <div class="slide_body">
@@ -177,34 +173,38 @@
         </section>
         <section class="now_playing">
           <h2 class="tab">현재 상영작</h2>
-          <ul class="now__body"></ul>
+          <ul class="now__body">
+            <!-- list 는 자바스크립트에서 ajax로 -->
+          </ul>
         </section>
-        <section class="top_rated">
+        <section class="popular">
           <h2 class="tab">랭&nbsp;&nbsp;킹</h2>
-          <div class="rated__body">
-            <ul class="reted__con">
+          <div class="popular__body">
+            <ul class="popular__con">
               <li>
-                <ul class="rated__movie">
-                  <li class="rated__poster">해당영화포스터</li>
-                  <li class="rated__info">영화 기본정보</li>
+                <ul class="popular__movie">
+                  <li class="popular__poster">해당영화포스터</li>
+                  <li class="popular__info">영화 기본정보</li>
                 </ul>
               </li>
-              <li class="rated__table">
+              <li class="popular__table">
                 <ul class="table_title">
-                  <li class="ranking"></li>
-                  <li class="movie_title"></li>
-                  <li class="movie_share"></li>
-                  <li class="movie_audience"></li>
+                  <li class="ranking">순위</li>
+                  <li class="movie_title">영화명</li>
+                  <li class="movie_share">점유율</li>
+                  <li class="movie_audience">관객수</li>
                 </ul>
                 <ul class="table_content"></ul>
               </li>
             </ul>
           </div>
         </section>
+
+        <div class="detail"></div>
       </main>
 
-      <footer class="container-fluid">
-        <section class="container-md row">
+      <footer>
+        <section class="row container-md footer__section">
           <div class="bt__logo col-md-2">
             <a href="./index.html"
               ><img src="images/logo_bottom.png" alt="하단로고"
@@ -232,5 +232,9 @@
         </section>
       </footer>
     </div>
+
+    <!-- javascript 연결 -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

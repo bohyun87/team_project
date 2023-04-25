@@ -4,14 +4,8 @@
 /* 메인, 상세페이지에서 공통으로 사용(헤어, 푸터) */
 
 *{
-    margin: 0 auto !important;
     padding: 0 !important;
     list-style: none;
-}
-
-html, body {
-    min-width: 1200px;
-    background-color: #fff;
 }
 
 a {
@@ -24,105 +18,84 @@ a {
 
 
 header {
+    padding: 30px !important;
     background-color: #eee;
     border-bottom: 2px solid #919191;
 }
 
-header > section {
-    min-height: 100px;
-    display: flex;
-    margin: 0 auto !important;
-}
-
 .logo {
-    min-height: 100px;
-    margin: 0 !important;
     display: flex;
     align-items: center;
-    /* background-color: #ccc; */
-    /* overflow: hidden; */
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.logo > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo > a > img {
-    width: 200px;
+    width: 80% !important;
 }
 
-.search {    
-    min-height: 100px;
-    float: left;
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    /* background-color: #ddd; */
-}
-
-.search > div {
-    width: 300px;
-    float: right;
-    margin: 0 !important;
-}
-
-.movie-search > input {
-    width: 200px !important;
-    border: none;
-    background-color: #000;
-}
-
-.movie-search > input::placeholder {
-    padding-left: 20px !important;
-    color: #7e7e7e;
-}
-
+/* 메인영역: 사용할 때 지우세요
+main {
+    height: 1200px;
+} */
 
 /* 푸터영역 */
 
 footer {
+    min-height: 200px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
     background-color: #eee;
-    border-top: 2px solid #919191;
+    padding: 30px 20px !important;
 }
 
-footer > section {
-    min-height: 100px;
-    display: flex;
-    text-align: center;
+.footer__section {
+    padding: 0 !important;
     margin: 0 auto !important;
+    padding-top: 20px !important;
 }
 
 .bt__logo {
-    min-height: 100px;
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-    /* background-color: #ccc; */
-}
-
-.bt__logo > a > img {
-    width: 200px;
-}
-
-.copy {
-    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #eee; */
+    padding: 0 !important;
+}
+
+.bt__logo > a {
+    display: flex;
+    justify-content: center;
+}
+
+.bt__logo > a > img{
+    width: 80% !important;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
+    text-align: center;
 }
 
 .familysite {
-    min-height: 100px;    
     display: flex;
     align-items: center;
-    /* background-color: #ddd; */
 }
 
 .familysite > select {
-    width: 150px !important;
-    height: 25px !important;
-    line-height: 25px !important;
+    width:60%;
     font-size: 14px;
     background-color: #000;
     color: #fff;   
-    font-weight: bold;
+    font-weight: bold;    
+    border-radius: none !important;
 }

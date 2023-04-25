@@ -4,36 +4,48 @@
 
 /* 메인영역 */
 
-
-
 main {
-    background-color: #fff;
+    height: 100% !important;
     font-family:  "맑은 고딕";
+    margin: 0 auto !important;
 }
 
-.menu {
-    min-height: 50px;
-    line-height: 50px;
-    background-color: #fff;
+main > section {
+    background-color: #000;
+    padding: 5px 0 !important;
 }
 
 .navi > ul {
-    width: 460px;
+    padding: 15px !important;
     display: flex;
     justify-content: space-between;
 }
 
 .navi > ul > li {
-    width: 115px;
+    width: 25%;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+}
+
+.menu-list li a {
+    color: #fff !important;
 }
 
 .navi > ul > li:hover a {
     color: red !important;
     font-weight: bold !important;
     text-decoration: underline !important;
+}
+
+.search {
+    margin: 0 auto !important;
+}
+
+.movie-search{
+    width: 55% !important;
+    display: flex;
+    margin: 0 auto !important;
 }
 
 .imgslide {
@@ -126,6 +138,7 @@ main {
 .movie img {
     width: 200px;
 }
+
 .contents {
     width: 1200px;
     height: 300px;
@@ -179,8 +192,9 @@ main {
     background-color: #d9d9d9;
 }
 
+/* 현재상영작 시작 */
 .now_playing {
-    width: 1200px;
+    width: 100%;
     height: 300px;
     background-color: #413c77;
     margin-top: 30px !important;
@@ -196,10 +210,18 @@ main {
 }
 
 .now_playing > ul {
-    width: 100%;
+    width: 3600px;
     display: flex;
     padding: 0 20px 10px 0 !important;
     margin: 0 !important;
+}
+
+.now_playing > ul > li {
+    width: 140px;
+    height: 190px;
+    background-color: #a1e9f3;
+    border: 1px solid #eee;
+    margin: 5px 5px !important;
 }
 
 .now-title {
@@ -219,15 +241,18 @@ main {
     font-size: 10px;
     text-align: center;
 }
+/* 현재상영작 끝 */
 
-.top_rated {
+
+/* 영화순위표 */
+.popular {
     width: 1200px;
     height: 600px;
     background-color: #fdfbcb; 
     margin-top: 30px !important;    
 }
 
-.top_rated > .tab {
+.popular > .tab {
     text-align: center;
     font-weight: bold;
     padding-top: 30px !important;
@@ -235,40 +260,47 @@ main {
     color: #000;
 }
 
-.rated__body {
+.popular__body {
     width: 1100px;
     height: 480px;
     /* border: 1px solid #000; */
 }
 
-.reted__con{
+.popular__con{
     display: flex;
 }
 
-.reted__con > li {
+.popular__con > li {
     width: 550px;
     height: 480px;
 }
 
-.rated__movie {
+.popular__movie {
     width: 100%;
     height: 480px;    
 }
 
-.rated__poster {
+.popular__poster {
     width: 330px;
     height: 480px;
     background-color: #ffaf66;
     float: left;
 }
 
-.rated__info {
+.popular__info {
     width: 190px;
     height: 480px;
     float: left;
     margin-right: 10px !important;
 }
 
-.rated__table{
+.popular__table{
     background-color: #fff;
+}
+
+/* 영화순위표 시작 */
+
+.detail{
+    width: 100%;
+    height: 100%;
 }
