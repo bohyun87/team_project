@@ -63,125 +63,119 @@ main > section {
 }
 
 .search > div > button {
-    width: 50px;
+    width: 50px; 
 }
 
-.imgslide {
+/* 이미지슬라이드 */
+
+.imgslide_body {
     width: 100%;
     height: 800px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.imgslide{
+    width: 100% !important;
+    height: 75% !important;
     position: relative;
     overflow: hidden;
 }
 
-.slide_body{
-    width: 400% !important;
-    height: 600px;
+.imgslide > a {
+    display: block !important;
+    position: absolute !important;
 }
 
-.slidelist {
-    width: calc(100% / 4);
-    display: flex;
-    justify-content: start;
-    padding: 0 !important;
+.imgslide > a > img {
+    width: 100%;
+    margin-top: -150px !important;
+}
+.imgslide span {
+    width: 100% !important;
     position: absolute;
-    top: 0px ;
-    left: 0;
-}
-
-.slidelist li:nth-child(1) img {
-    margin-top: -90px !important;
-}
-
-.slidelist li:nth-child(2) img {
-    margin-top: -65px !important;
-}
-
-.slidelist li:nth-child(3) img {
-    margin-top: -65px !important;
-}
-
-.slidelist li:nth-child(4) img {
-    margin-top: -65px !important;
-}
-
-.slidelist > li {
-    margin: 0 !important;
-}
-
-.slidelist_title {
-    position: absolute;
-    top : 200px;
-    margin-left: 150px !important;
-}
-
-.slidelist_title  p {
-    font-size: 50px !important;
+    top: 20%;
+    left: 10%;
+    font-size: 60px !important;
     text-shadow: 3px 3px 3px #a5a5a5;
-    padding-bottom: 10px !important;
+    color: #fff;
 }
 
-.slidelist_title > button {
-    width: 150px !important;
-    height: 40px !important;
-    line-height: 40px !important;
+.imgslide button {
+    width: 15% !important;
+    min-width: 150px !important;
+    height: 40px;
+    line-height: 40px;
     border-radius: 10px !important;
-    background-color: rgba(255,255,255,0.6) !important;
+    background-color: rgba(255,255,255,0.7) !important;
     color: #333 !important;
     border: none;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: bold;
 }
 
+/* 상세페이지 연결 */
+
 .detail_link {
-    display: flex;
-    justify-content: center;
+    width: 90% !important;
+    display: flex !important;
+    justify-content: center !important;
     position: absolute;
-    top: 450px;
+    top: 50%;
     z-index: 100;
+    margin: 0 auto !important;
 }
 
-.movie {   
-    margin: 0 15px  !important;
-    overflow: hidden !important;
+.detail_link > a {  
+    width: 25% !important; 
     display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 5px !important;
-    position: relative;
+    position: relative !important;
+    overflow: hidden !important;
+    margin: 0 40px !important;   
 }
 
 .movie img {
-    width: 75% !important;
+    width: 100% !important;
     margin: 0 auto !important;
+    padding: 0 !important;
     border-radius: 15px !important;
     border: 1px solid #000;
 }
 
 .movie > span {
-    width: 72%;
-    height: 80px !important;
-    
-    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 80px !important;    
+    background-color: rgba(0,0,0,0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 200px;
-    left: 4px;
+    bottom: 0;
+    left: 0;
     z-index: 120;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     font-weight: #fff;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border-radius: 0 0 15px 15px !important;
 }
 
+
+/* 이미지슬라이드 끝 */
+
+
+
 .contents {
-    height: 300px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0 !important;
-    border-bottom: 1px solid #ddd;
+    padding: 0 0 30px 0 !important;
     border-top: 1px solid #ddd;
 }
 
@@ -194,97 +188,126 @@ main > section {
 }
 
 .gallery {
-    height: 100%;
     margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contents_body1 {    
-    width: 550px;
-    height: 195px;
+.contents_body1 { 
+    height: 200px !important;
     background-color: #eee;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px !important;
+    margin: 0 auto !important;
 }
 
 .contents_body1 > li {
-    width: 120px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
+    padding: 20px !important;
     border: 1px solid #eee;
-    border: 1px solid #eee;
-    margin: 5px !important;
 }
 
 .news {
-    width: 550px;
-    height: 390px;
     margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contents_body2 {    
-    width: 550px;
-    height: 195px;
-    background-color: #d9d9d9;
+.contents_body2 {  
+    height: 200px !important;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px 20px !important;
+    margin: 0 auto !important;
+}
+
+.contents_body2 > li {
+    padding: 2px 10px !important;
+    border: 1px solid #eee;
+    font-size: 20px;
 }
 
 /* 현재상영작 시작 */
 .now_playing {
     width: 100%;
-    height: 300px;
-    background-color: #413c77;
-    margin-top: 30px !important;
-    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px !important;
+    background-color: #bbb;
 }
 
 .now_playing .tab {
     text-align: center;
     font-weight: bold;
-    padding-top: 30px !important;
-    padding-bottom: 20px !important;
     color: #fff;
+    margin: 0 auto !important;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px !important;
+    padding-top: 20px !important;    
 }
 
-.now_playing > ul {
-    width: 3600px;
+.now__bodywrap {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px !important;
+}
+
+.now__body {
+    width: 100%;
+    height: 100% !important;
     display: flex;
-    padding: 0 20px 10px 0 !important;
+    padding: 0 !important;
     margin: 0 !important;
 }
 
-.now_playing > ul > li {
-    width: 140px;
-    height: 190px;
-    background-color: #a1e9f3;
-    border: 1px solid #eee;
-    margin: 5px 5px !important;
+.now_list {
+    width: 12.5% !important;
+    height: 80% !important;
+    margin: 0 14px 20px !important;
+}
+
+.now_list > a {
+    width: 100% !important;
+    margin: 0 auto!important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden;
 }
 
 .now-title {
-    font-size: 10px;
-}
-
-.now_list{
-    width: calc(100% / 10);
-    margin: 0 5px !important;
-}
-
-.now-img{
-    height: 25%;
-}
-
-.now__body > li > h2 {
-    font-size: 10px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    color: #fff;
     text-align: center;
+    padding: 5px !important;
 }
 /* 현재상영작 끝 */
 
 
 /* 영화순위표 */
 .popular {
-    width: 1200px;
-    height: 600px;
-    background-color: #fdfbcb; 
-    margin-top: 30px !important;    
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg_img.png);  
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .popular > .tab {
@@ -295,47 +318,60 @@ main > section {
     color: #000;
 }
 
-.popular__body {
-    width: 1100px;
-    height: 480px;
-    /* border: 1px solid #000; */
-}
-
-.popular__con{
+.popular__contents{
     display: flex;
 }
 
-.popular__con > li {
-    width: 550px;
-    height: 480px;
+.popular__contents > li {
+    height: 100%;
 }
 
 .popular__movie {
-    width: 100%;
-    height: 480px;    
+    width: 100%; 
+    display: flex;  
 }
 
 .popular__poster {
-    width: 330px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
     background-color: #ffaf66;
     float: left;
 }
 
 .popular__info {
-    width: 190px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
     float: left;
     margin-right: 10px !important;
 }
 
 .popular__table{
     background-color: #fff;
+    padding: 10px !important;
 }
 
-/* 영화순위표 시작 */
+.table_title {
+    display: flex;
+    text-align: center;
+    padding-bottom: 5px !important;
+    border-bottom: 3px solid #1d1d1d;
+    margin-bottom: 5px !important;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-.detail{
-    width: 100%;
-    height: 100%;
+.table_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table_content_list{
+    display: flex;
+}
+
+.table_content_list > li {
+    padding: 10px 0 !important;
+    border-bottom: 1px solid #eee;
 }

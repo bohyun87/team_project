@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team 5: 부제목</title>
     <!-- css 연결 -->
-    <link rel="stylesheet" href="css/common.css" type="text/css" />
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+
+    <!-- javascript 연결 -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js" defer type="text/javascript"></script>
 
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css" />
     <link
       rel="stylesheet"
       href="./fontawesome-free-6.3.0-web/css/fontawesome.css"
@@ -44,6 +48,7 @@
       </header>
 
       <main class="container-fluid">
+        <!-- 메뉴바 -->
         <section class="menu">
           <nav class="container-md navi">
             <ul class="col-md-8 menu-list">
@@ -54,6 +59,7 @@
             </ul>
           </nav>
 
+          <!-- 검색창 -->
           <div class="container search">
             <div class="input-group mb-3 movie-search">
               <input
@@ -73,52 +79,57 @@
             </div>
           </div>
         </section>
-        <section class="imgslide container-md">
-          <div class="slide_body">
-            <ul class="slidelist">
-              <li>
-                <img src="images/imgslide_movie1.jpg" alt="인터스텔라" />
-                <div class="slidelist_title">
-                  <p>Interstellar</p>
-                  <button type="button" class="btn btn-light">
-                    자세히 보기
-                  </button>
-                </div>
-              </li>
-              <li>
-                <img
-                  src="images/imgslide_movie2.jpg"
-                  alt="더 퍼스트 슬램덩크"
-                />
-                <div class="slidelist_title">
-                  <p>The First Slam Dunk</p>
-                  <button type="button" class="btn btn-light">
-                    자세히 보기
-                  </button>
-                </div>
-              </li>
-              <li>
-                <img src="images/imgslide_movie3.jpg" alt="존 윅 4" />
-                <div class="slidelist_title">
-                  <p>John Wick: Chapter 4</p>
-                  <button type="button" class="btn btn-light">
-                    자세히 보기
-                  </button>
-                </div>
-              </li>
-              <li>
-                <img src="images/imgslide_movie4.jpg" alt="아바타-물의 길" />
-                <div class="slidelist_title">
-                  <p>Avatar: The Way of Water</p>
-                  <button type="button" class="btn btn-light">
-                    자세히 보기
-                  </button>
-                </div>
-              </li>
-            </ul>
+
+        <section class="imgslide_body container-md">
+          <!-- 이미지슬라이드 -->
+          <div class="imgslide">
+            <a href="#" class="active">
+              <span
+                >Interstellar<br /><button type="button" class="btn btn-light">
+                  자세히 보기
+                </button></span
+              >
+              <img src="images/imgslide_movie1.jpg" alt="인터스텔라" />
+            </a>
+            <a href="#">
+              <span
+                >The First Slam Dunk<br /><button
+                  type="button"
+                  class="btn btn-light"
+                >
+                  자세히 보기
+                </button></span
+              >
+              <img src="images/imgslide_movie2.jpg" alt="더 퍼스트 슬램덩크" />
+            </a>
+            <a href="#">
+              <span
+                >John Wick: Chapter 4<br /><button
+                  type="button"
+                  class="btn btn-light"
+                >
+                  자세히 보기
+                </button></span
+              >
+              <img src="images/imgslide_movie3.jpg" alt="존 윅 4" />
+            </a>
+            <a href="#">
+              <span
+                >Avatar: The Way of Water<br /><button
+                  type="button"
+                  class="btn btn-light"
+                >
+                  자세히 보기
+                </button></span
+              >
+              <img src="images/imgslide_movie4.jpg" alt="아바타-물의 길" />
+            </a>
           </div>
-          <div class="detail_link row container">
-            <a class="movie detail_movie_1 col-3">
+
+          <!-- 상세페이지연결 -->
+
+          <div class="detail_link container-md">
+            <a href="#" class="movie detail_movie_1">
               <img
                 src="images/movie1_interstellar-poster.jpg"
                 alt="인터스텔라"
@@ -127,7 +138,7 @@
                 >인터스텔라<br />개봉일 : 2014.11.06.</span
               >
             </a>
-            <a class="movie detail_movie_2 col-3">
+            <a href="#" class="movie detail_movie_2">
               <img
                 src="images/movie2_slam-duck-poster.jpg"
                 alt="더 퍼스트 슬램덩크"
@@ -136,13 +147,13 @@
                 >더 퍼스트 슬램덩크<br />개봉일 : 2023.01.04.</span
               >
             </a>
-            <a class="movie detail_movie_3 col-3">
+            <a href="#" class="movie detail_movie_3">
               <img src="images/movie3_john-wick-4-poster.jpg" alt="존 윅 4" />
               <span class="movie3_title"
                 >존 윅 4<br />개봉일 : 2023.04.12.</span
               >
             </a>
-            <a class="movie detail_movie_4 col-3">
+            <a class="movie detail_movie_4">
               <img src="images/movie4_avatar-poster.jpg" alt="아바타-물의 길" />
               <span class="movie4_title"
                 >아바타-물의 길<br />개봉일 : 2022.12.14.</span
@@ -150,10 +161,13 @@
             </a>
           </div>
         </section>
-        <section class="contents">
-          <div class="gallery">
-            <h2 class="tab">gallery</h2>
-            <ul class="contents_body1">
+
+        <!-- 콘텐츠 -->
+        <section class="contents container-md">
+          <!-- 갤러리 -->
+          <div class="gallery col-md-6">
+            <h2 class="tab">News</h2>
+            <ul class="contents_body1 col-md-10">
               <li>
                 <a href="#"><img src="#" alt="img1" /></a>
               </li>
@@ -168,9 +182,11 @@
               </li>
             </ul>
           </div>
-          <div class="news">
-            <h2 class="tab">news</h2>
-            <ul class="contents_body2">
+
+          <!-- 뉴스기사 -->
+          <div class="news col-md-6">
+            <h2 class="tab">NEW Movie</h2>
+            <ul class="contents_body2 col-md-10">
               <li><a href="#">영화 기사 1</a></li>
               <li><a href="#">영화 기사 2</a></li>
               <li><a href="#">영화 기사 3</a></li>
@@ -179,36 +195,43 @@
             </ul>
           </div>
         </section>
-        <section class="now_playing">
-          <h2 class="tab">현재 상영작</h2>
-          <ul class="now__body">
-            <!-- list 는 자바스크립트에서 ajax로 -->
-          </ul>
+
+        <!-- ajax 현재상영작 -->
+        <section class="now_playing container-fluid">
+          <h2 class="tab col-sm-1.5">현재 상영작</h2>
+          <div class="now__bodywrap container-md">
+            <ul class="now__body">
+              <!-- list 는 자바스크립트에서 ajax로 -->
+            </ul>
+          </div>
         </section>
-        <section class="popular">
-          <h2 class="tab">랭&nbsp;&nbsp;킹</h2>
-          <div class="popular__body">
-            <ul class="popular__con">
-              <li>
-                <ul class="popular__movie">
-                  <li class="popular__poster">해당영화포스터</li>
-                  <li class="popular__info">영화 기본정보</li>
+
+        <!-- 랭킹 -->
+        <section class="popular container-fluid">
+          <h2 class="tab container-md">랭&nbsp;&nbsp;킹</h2>
+          <div class="popular__body container-md">
+            <ul class="popular__contents container-md">
+              <li class="col-md-6">
+                <ul class="popular__movie container-md">
+                  <li class="popular__poster col-md-7">해당영화포스터</li>
+                  <li class="popular__info col-md-5">영화 기본정보</li>
                 </ul>
               </li>
-              <li class="popular__table">
-                <ul class="table_title">
-                  <li class="ranking">순위</li>
-                  <li class="movie_title">영화명</li>
-                  <li class="movie_share">점유율</li>
-                  <li class="movie_audience">관객수</li>
+
+              <!-- 영화순위표 -->
+              <li class="popular__table col-md-6">
+                <ul class="table_title container-md">
+                  <li class="ranking col-md-2">순위</li>
+                  <li class="movie_title col-md-4">영화명</li>
+                  <li class="movie_share col-md-3">점유율</li>
+                  <li class="movie_audience col-md-3">관객수</li>
                 </ul>
-                <ul class="table_content"></ul>
+                <div class="table_content container-md"></div>
               </li>
             </ul>
           </div>
         </section>
 
-        <div class="detail"></div>
       </main>
 
       <footer>
@@ -240,9 +263,5 @@
         </section>
       </footer>
     </div>
-
-    <!-- javascript 연결 -->
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>
