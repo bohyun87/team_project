@@ -1,27 +1,30 @@
 // Team 5 Project index js
 
-// jQuery(document).ready(function () {
-//   setInterval(function () {
-//     $('.slide_body').delay(1000);
-//     $('.slide_body').animate({ marginLeft: "-100%" });
-//     $('.slide_body').delay(2000);
-//     $('.slide_body').animate({ marginLeft: "-200%" });
-//     $('.slide_body').delay(2000);
-//     $('.slide_body').animate({ marginLeft: "-300%" });
-//     $('.slide_body').delay(2000);
-//     $('.slide_body').animate({ marginLeft: 0 });
-//     $('.slide_body').delay(1000);
-//   }, 3000);
-// });
+
+// 이미지 슬라이드 시작 =================================================
+jQuery(document).ready(function () {
+  setInterval (function () {
+    $('.slidelist > li').delay(1000);
+    $('.slidelist > li').animate({ marginLeft: "-100%" });
+    $('.slidelist > li').delay(2000);
+    $('.slidelist > li').animate({ marginLeft: "-200%" });
+    $('.slidelist > li').delay(2000);
+    $('.slidelist > li').animate({ marginLeft: "-300%" });
+    $('.slidelist > li').delay(2000);
+    $('.slidelist > li').animate({ marginLeft: 0 });
+    $('.slidelist > li').delay(1000);
+  }, 3000);
+});
+// 이미지 슬라이드 끝 ==================================================
 
 // 현재 상영작 ajax 시작 ------------------------------------
 (function(){
-  const now_movieURL =
+  const nowmovieURL =
   "https://api.themoviedb.org/3/movie/now_playing?api_key=c8509b8f85db6c465df670fd3eb60def&language=ko-KR&region=KR";
   
   $.ajax({
   type: "GET",
-  url: now_movieURL, // 선언한 주소 변수
+  url: nowmovieURL, // 선언한 주소 변수
   dataType: "json",
   async: false,
   success: function (data) {

@@ -8,7 +8,7 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/common.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
-   
+
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css" />
     <link
@@ -43,7 +43,7 @@
         </section>
       </header>
 
-      <main>
+      <main class="container-fluid">
         <section class="menu">
           <nav class="container-md navi">
             <ul class="col-md-8 menu-list">
@@ -73,7 +73,7 @@
             </div>
           </div>
         </section>
-        <section class="imgslide col-md-12">
+        <section class="imgslide container-md">
           <div class="slide_body">
             <ul class="slidelist">
               <li>
@@ -91,7 +91,7 @@
                   alt="더 퍼스트 슬램덩크"
                 />
                 <div class="slidelist_title">
-                  <h2>The First Slam Dunk</h2>
+                  <p>The First Slam Dunk</p>
                   <button type="button" class="btn btn-light">
                     자세히 보기
                   </button>
@@ -100,7 +100,7 @@
               <li>
                 <img src="images/imgslide_movie3.jpg" alt="존 윅 4" />
                 <div class="slidelist_title">
-                  <h2>John Wick: Chapter 4</h2>
+                  <p>John Wick: Chapter 4</p>
                   <button type="button" class="btn btn-light">
                     자세히 보기
                   </button>
@@ -109,7 +109,7 @@
               <li>
                 <img src="images/imgslide_movie4.jpg" alt="아바타-물의 길" />
                 <div class="slidelist_title">
-                  <h2>Avatar: The Way of Water</h2>
+                  <p>Avatar: The Way of Water</p>
                   <button type="button" class="btn btn-light">
                     자세히 보기
                   </button>
@@ -117,28 +117,36 @@
               </li>
             </ul>
           </div>
-          <div class="detail_link col-md-12">
-            <a class="movie detail_movie_1">
+          <div class="detail_link row container">
+            <a class="movie detail_movie_1 col-3">
               <img
                 src="images/movie1_interstellar-poster.jpg"
                 alt="인터스텔라"
               />
-              <p class="movie1_title">인터스텔라</p>
+              <span class="movie1_title"
+                >인터스텔라<br />개봉일 : 2014.11.06.</span
+              >
             </a>
-            <a class="movie detail_movie_2">
+            <a class="movie detail_movie_2 col-3">
               <img
                 src="images/movie2_slam-duck-poster.jpg"
                 alt="더 퍼스트 슬램덩크"
               />
-              <p class="movie2_title">더 퍼스트 슬램덩크</p>
+              <span class="movie2_title"
+                >더 퍼스트 슬램덩크<br />개봉일 : 2023.01.04.</span
+              >
             </a>
-            <a class="movie detail_movie_3">
+            <a class="movie detail_movie_3 col-3">
               <img src="images/movie3_john-wick-4-poster.jpg" alt="존 윅 4" />
-              <p class="movie3_title">존 윅 4</p>
+              <span class="movie3_title"
+                >존 윅 4<br />개봉일 : 2023.04.12.</span
+              >
             </a>
-            <a class="movie detail_movie_4">
+            <a class="movie detail_movie_4 col-3">
               <img src="images/movie4_avatar-poster.jpg" alt="아바타-물의 길" />
-              <p class="movie4_title">아바타-물의 길</p>
+              <span class="movie4_title"
+                >아바타-물의 길<br />개봉일 : 2022.12.14.</span
+              >
             </a>
           </div>
         </section>
