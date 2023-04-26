@@ -3,18 +3,18 @@
 // 이미지 슬라이드 시작 =================================================
 
 $(document).ready(function () {
-  $('.imgslide a:gt(0)').hide();
-  setInterval(function(){
-    $('.imgslide a:first-child')
-    .fadeOut()
-    .next('a')
-    .fadeIn()
-    .next('a')
-    .fadeOut()
-    .end()
-    .appendTo('.imgslide')
-  },4000);
-}); 
+  $(".imgslide a:gt(0)").hide();
+  setInterval(function () {
+    $(".imgslide a:first-child")
+      .fadeOut()
+      .next("a")
+      .fadeIn()
+      .next("a")
+      .fadeOut()
+      .end()
+      .appendTo(".imgslide");
+  }, 4000);
+});
 // 이미지 슬라이드 끝 ==================================================
 
 // 현재 상영작 ajax 시작 ------------------------------------
@@ -31,10 +31,10 @@ $.ajax({
 
     for (const result of results) {
       let imgURL = "https://image.tmdb.org/t/p/w500" + result.poster_path;
-            $(".now__body").append(
+      $(".now__body").append(
         `<li class="now_list">
            <a href="./detail.html?id=${result.id}">
-           <img class="now-img" src="${imgURL}">
+           <img class="now-img" src="${imgURL}" alt="현재상영작">
            <span class="now-title">${result.title}</span>
            </a>
          </li>`

@@ -24,13 +24,14 @@ main > section {
 }
 
 .navi > ul {
+    width: 50%;
     padding: 15px !important;
     display: flex;
     justify-content: space-between;
 }
 
 .navi > ul > li {
-    width: 25%;
+    min-width: 33.33%;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -48,6 +49,8 @@ main > section {
 
 .search {
     margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
 }
 
 .movie-search{
@@ -243,7 +246,7 @@ main > section {
     flex-direction: column;
     justify-content: center;
     margin-top: 20px !important;
-    background-color: #bbb;
+    background-color: #484747;
 }
 
 .now_playing .tab {
@@ -288,11 +291,12 @@ main > section {
 
 .now-title {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
     font-size: 18px;
     color: #fff;
     text-align: center;
     padding: 5px !important;
+
 }
 /* 현재상영작 끝 */
 
@@ -374,4 +378,9 @@ main > section {
 .table_content_list > li {
     padding: 10px 0 !important;
     border-bottom: 1px solid #eee;
+}
+
+.table_content_list:hover {
+    background-color: #eee !important;
+    font-weight: bold !important;
 }

@@ -14,7 +14,10 @@
     <script src="js/index.js" defer type="text/javascript"></script>
 
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.3.0-web/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="./fontawesome-free-6.3.0-web/css/fontawesome.css"
@@ -51,16 +54,15 @@
         <!-- 메뉴바 -->
         <section class="menu">
           <nav class="container-md navi">
-            <ul class="col-md-8 menu-list">
-              <li><a href="#">추천영화</a></li>
-              <li><a href="#">콘텐츠</a></li>
-              <li><a href="#">현재상영작</a></li>
-              <li><a href="#">랭킹</a></li>
+            <ul class="container menu-list">
+              <li class="col-4"><a href="#">추천영화</a></li>
+              <li class="col-4"><a href="#">현재상영작</a></li>
+              <li class="col-4"><a href="#">랭킹</a></li>
             </ul>
           </nav>
 
           <!-- 검색창 -->
-          <div class="container search">
+          <div class="container-md search">
             <div class="input-group mb-3 movie-search">
               <input
                 type="text"
@@ -153,7 +155,7 @@
                 >존 윅 4<br />개봉일 : 2023.04.12.</span
               >
             </a>
-            <a class="movie detail_movie_4">
+            <a href="#" class="movie detail_movie_4">
               <img src="images/movie4_avatar-poster.jpg" alt="아바타-물의 길" />
               <span class="movie4_title"
                 >아바타-물의 길<br />개봉일 : 2022.12.14.</span
@@ -162,9 +164,9 @@
           </div>
         </section>
 
-        <!-- 콘텐츠 -->
+        <!-- 콘텐츠
         <section class="contents container-md">
-          <!-- 갤러리 -->
+          
           <div class="gallery col-md-6">
             <h2 class="tab">News</h2>
             <ul class="contents_body1 col-md-10">
@@ -183,7 +185,7 @@
             </ul>
           </div>
 
-          <!-- 뉴스기사 -->
+          
           <div class="news col-md-6">
             <h2 class="tab">NEW Movie</h2>
             <ul class="contents_body2 col-md-10">
@@ -194,7 +196,7 @@
               <li><a href="#">영화 기사 5</a></li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
         <!-- ajax 현재상영작 -->
         <section class="now_playing container-fluid">
@@ -231,7 +233,6 @@
             </ul>
           </div>
         </section>
-
       </main>
 
       <footer>
